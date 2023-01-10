@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+  background: wheat;
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}

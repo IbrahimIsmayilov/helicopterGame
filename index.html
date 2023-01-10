@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Helicopter Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+  <!-- Load JavaScript -->
+  <script defer src="JS/heliGameFunctions.js"></script>
+  <script defer src="JS/heliGame.js"></script>
+  <script defer src="JS/guiFunctions.js"></script>
+  <script defer src="JS/startGui.js"></script>
+</head>
+
+<body>
+  <!-- The Helicopter Game -->
+  <canvas id="myCanvas" class="hidden"></canvas>
+  <!-- Sign In Div -->
+  <div id="signInDiv">
+    <img src="img/heliBlueTransparent.png" alt="Blue Pixelated Helicopter">
+    <hr>
+    <hr>
+
+    <h1>Welcome Back Player</h1>
+    <p>Please fill this out and sign in to start playing again.</p>
+
+    <p>Username: <span>*</span></p>
+    <input type="text" id="signInUser"/>
+
+    <p>Password: <span>*</span></p>
+    <input type="password" id="signInPass"/>
+
+    <p>
+      <button id="signInBtn">Sign In</button>
+    </p>
+
+    <p>Haven't signed up yet?
+      <span id="signUpLink" class="link">Click Here</span>
+    </p>
+
+    <hr>
+
+    <p>* required field</p>
+  </div>
+
+  <!-- Sign-Up-Div -->
+  <div id="signUpDiv" class="hidden">
+    <h1>Please fill this out to become a user:</h1>
+
+    <p>Username: </p>
+    <input type="text" id="signUpUser">
+
+    <p>Password: </p>
+    <input type="password" id="signUpPass">
+
+    <p>Confirm Password: </p>
+    <input type="password" id="signUpConfPass">
+
+    <p>
+      <button id="signUpBtn">Sign Up</button>
+    </p>
+
+    <p>
+      Already a user?
+      <span id="signInLink" class="link">Sign In Here</span>;
+    </p>
+  </div>
+  
+</body>
+
+</html>
